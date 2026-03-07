@@ -1,0 +1,69 @@
+Aim: write a program to implement various string operations
+
+Algorithm: 
+step1: start the program.
+step2: intialize a string variable. 
+step3: performed operations are in , not in, reversee, split function, find function , replace function, index function , lower & uppercase function concadenate.
+step4: run the code.
+step5: stop the program.
+
+PROGRAM CODE:
+
+print("string function")
+str = "jain university"
+
+print(" in and not in: ")
+print("i" in str)
+print("I"not in str)
+
+print(" split function: ")
+print(str.split())
+print(str.split('i'))
+
+print("find function:")
+print(str.find("s"))
+
+print("replace function:")
+print(str.replace('j','J'))
+
+print("index function:")
+test = "this is a text messaage"
+i=test.index("is")
+print(i)
+
+print("upper and lower funtion:")
+print(str.upper())
+print(str.lower())
+
+print(" concadenate function:")
+str1 = " is my collage "
+concate = str+str1
+print(concate)
+
+print("reverse:")
+s=str[::-1]
+print(s)
+
+
+OUTPUT:
+
+string function
+ in and not in: 
+True
+True
+ split function: 
+['jain', 'university']
+['ja', 'n un', 'vers', 'ty']
+find function:
+11
+replace function:
+Jain university
+index function:
+2
+upper and lower funtion:
+JAIN UNIVERSITY
+jain university
+ concadenate function:
+jain university is my collage
+reverse:
+ytisrevinu niaj

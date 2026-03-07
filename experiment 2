@@ -1,0 +1,73 @@
+Aim: write a program to implement control flow statement and looping statement in python.
+
+Algorithm:
+step1: start the program.
+step2: initialize runs,balls, wickets,overs,runs,conceded and catches.
+step3: calculate strike rate and economy rate.
+step4: determine batting , bowling, and fielding performance using conditions.
+step5: determine overall performace.
+step6: run the code.
+step7: stop the program
+
+PROGRAM :
+
+runs=148
+balls=50
+wickets=4
+run_conceded=29
+overs=2
+catches=3
+
+strike_rate=(runs/balls)*100
+economy=run_conceded/overs
+
+if runs>=50 and strike_rate>=120:
+    batter="excellent batter"
+elif runs>=30 and strike_rate >=100:
+    batter ="good batter"
+elif runs>=20:
+    batter="average batter"
+else:
+    batter = "poor batter"
+    
+if wickets>=3 and economy <=6:
+    bowler="excellent bowler"
+elif wickets>=2 and economy <=8:
+    bowler="good bowler"
+elif wickets>=1:
+    bowler="average bowler"
+else:
+    bowler="poor bowler"
+    
+if catches>=2:
+    fields="outstanding fields"
+elif catches==1:
+    fields="active fields"
+else:
+    fields="needs improvement"
+    
+if batter =="excellent batter" and bowler == "excellent bowler":
+    overall="star all_rounder"
+elif batter == "good batter" and bowler== "good bowler":
+    overall="star all_rounder"
+elif batter == "good batter" or bowler == "good bowler":
+    overall="supporting all_rounder"
+else:
+    overall="needs improvement"
+    
+print("strike rate:", strike_rate) 
+print("economy:",economy)
+print("batting performance:", batter)
+print(" bowling performance:", bowler)
+print("fielding performance:", fields)
+print("overall performance:", overall)     
+
+
+OUTPUT:
+
+strike rate: 296.0
+economy: 14.5
+batting performance: excellent batter
+ bowling performance: average bowler
+fielding performance: outstanding fields
+overall performance: needs improvement

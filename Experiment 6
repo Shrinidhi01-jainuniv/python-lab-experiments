@@ -1,0 +1,37 @@
+Aim: write a program to demonstrate dictionary and releated function in python.
+
+Algorithm:
+step1: start the program.
+step2: create an empty dictionary.
+step3: performed dictionary related fuctions like  adding elements in dictionary  , updating elements, delecting elements, key fuction, get function.
+step4: run the code.
+step5: stop the program.
+
+PROGRAM:
+
+Phonebook={}
+
+Phonebook["nidhi"]="1234560789"
+Phonebook["ridhi"]="9880999270"
+Phonebook["kisha"]="6363863745"
+Phonebook["kaushik"]="9632706561"
+
+Phonebook["nidhi"]="6366666745"
+
+del Phonebook["ridhi"]
+for name , number in Phonebook.items(): print(name,":", number)
+print("retriving from get:", Phonebook.get("kisha"))
+print(Phonebook.keys())
+print(Phonebook.values())
+print("Phonebook:", Phonebook.items())
+
+
+OUTPUT:
+
+nidhi : 6366666745
+kisha : 6363863745
+kaushik : 9632706561
+retriving from get: 6363863745
+dict_keys(['nidhi', 'kisha', 'kaushik'])
+dict_values(['6366666745', '6363863745', '9632706561'])
+Phonebook: dict_items([('nidhi', '6366666745'), ('kisha', '6363863745'), ('kaushik', '9632706561')])

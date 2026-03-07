@@ -1,0 +1,76 @@
+Aim: write a program to demonstrate list and related functions in python.
+
+Algorithm:
+step1: start the program.
+step2: create a list with some elements.
+step3: perform list operations like slice , append , copy , extend, insert , remove , sort , loop , modifie , concate , tuple assigment.
+step4: run the code.
+step5: stop the program.
+
+PROGRAM:
+
+print("list operations")
+#slicing
+list1=[1,2,3,4,5,6,7,8,9]
+e=list1[-8:-1:2]
+print(e)
+#append
+list1.append(10)
+print(list1)
+#copy
+subject_gen=["1","2","3"]
+x=subject_gen.copy()
+print(x)
+#extend
+no1=["11","22","33"]
+no2=["44","55","66"]
+no1.extend(no2)
+print(no1)
+#insert
+list1.insert(11,12)
+print(list1)
+#remove
+list1.remove(2)
+print(list1)
+#sort
+score=[69,67,6,100,360,180,96,54]
+score.sort()
+print("Asc order:",score)
+score.sort(reverse=True)
+print("Des order:",score)
+#loop
+countries=["INDIA","USA","UK"]
+for i in countries:
+ print(i)
+#modifie
+list1[5]=55
+print(list1)
+#concate
+a=[1.2]
+b=[3.4]
+result=a+b
+print(result)
+#tuple assignment
+p,q=[5,8]
+print(p,q)
+print(p+q)
+    
+
+OUTPUT:
+
+list operations
+[2, 4, 6, 8]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+['1', '2', '3']
+['11', '22', '33', '44', '55', '66']
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12]
+[1, 3, 4, 5, 6, 7, 8, 9, 10, 12]
+Asc order: [6, 54, 67, 69, 96, 100, 180, 360]
+Des order: [360, 180, 100, 96, 69, 67, 54, 6]
+INDIA
+USA
+UK
+[1, 3, 4, 5, 6, 55, 8, 9, 10, 12]
+[1.2, 3.4]
+5 8
+13
